@@ -1,4 +1,4 @@
-package com.github.ddmytrenko.retrofit2
+package com.github.ddmytrenko.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.Retrofit.Builder

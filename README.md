@@ -1,2 +1,3 @@
-# retrofit2-kotlin
-Kotlin extensions for Retrofit 2
+# retrofit-kotlin
+Kotlin extensions for Retrofit REST client
+
