@@ -1,0 +1,9 @@
+apply plugin: 'build-time-tracker'
+
+buildtimetracker {
+    reporters {
+        summary {
+            barstyle 'unicode'
+        }
+    }
+}

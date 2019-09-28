@@ -1,0 +1,23 @@
+apply plugin: 'io.gitlab.arturbosch.detekt'
+
+detekt {
+    config = files('detekt.yml')
+    filters = '.*/build/.*,.*/out/.*,.*/resources/.*'
+    input = files('src/main/kotlin', 'src/test/kotlin')
+    parallel = true
+    toolVersion = "${versions.detekt}"
+
+    reports {
+        html {
+            enabled = true
+            destination = file('build/reports/detekt.html')
+        }
+        xml {
+            enabled = false
+        }
+    }
+}
+
+dependencies {
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:${versions.detekt}"
+}
